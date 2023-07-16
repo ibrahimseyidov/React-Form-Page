@@ -29,7 +29,6 @@ export default class LoginForm extends Component {
             isTrue: true,
             isTruePass: true,
             isChecked: false,
-            errorMessage: false,
 
             newUserInfo: []
         };
@@ -85,7 +84,6 @@ export default class LoginForm extends Component {
     handleSubmitData = () => {
         const { email, password, isChecked } = this.state;
         if (!email || !password) {
-            this.setState({ errorMessage: true })
             toast.error('Oops! Please Enter Email and Password...', {
                 position: "top-right",
                 autoClose: 5000,
@@ -97,7 +95,12 @@ export default class LoginForm extends Component {
                 theme: "colored",
             });
         } else {
-            this.setState({ errorMessage: false })
+            let newUserObj = { email, password, isChecked }
+            let newUserArr = []
+            newUserArr.push(newUserObj)
+            let newObj = [...this.state.newUserInfo, ...newUserArr]
+            this.setState({ newUserInfo: newObj })
+
             toast.success('Successful! Login process is successful', {
                 position: "top-right",
                 autoClose: 5000,
@@ -110,11 +113,7 @@ export default class LoginForm extends Component {
             });
         }
 
-        let newUserObj = { email, password, isChecked }
-        let newUserArr = []
-        newUserArr.push(newUserObj)
-        let newObj = [...this.state.newUserInfo, ...newUserArr]
-        this.setState({ newUserInfo: newObj })
+
     }
 
     render() {
@@ -236,7 +235,6 @@ export default class LoginForm extends Component {
                             </FormControl>
 
                             <FormControlLabel sx={{ marginBottom: "20px" }} checked={this.state.isChecked} onChange={this.handleChecked} control={<Checkbox />} label="Remember me" />
-                            {this.state.errorMessage ? <div>Ooppss xeta bas verdi!!</div> : null}
                             <button className={styles["login-btn"]} onClick={this.handleSubmitData} type="submit">Login</button>
                         </form>
 

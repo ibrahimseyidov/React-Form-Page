@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    background: #F4F4F4;
+    height: 100vh;
+    overflow-y: hidden !important;
+    display: flex;
+    align-items: center;
+}
+
+.left-login-container {
+    margin: 0 140px 0 140px;
+}
+
+.right-login-container {
+    background-color: #fff;
+    padding: 56px;
+    margin-right: 40px;
+    width: 600px;
+}
+
+.welcome {
+    color: #2F2F2F;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 37px;
+}
+
+.eacamp {
+    color: #6358DC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-login {
+    margin-bottom: 28px;
+}
+
+.google-login-btn {
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.11);
+    color: var(--black, #2F2F2F);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.google-login-btn:hover {
+    opacity: .7;
+}
+
+.facebook-login-btn:hover {
+    opacity: .7;
+}
+
+.facebook-login-btn {
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.11);
+    color: var(--black, #2F2F2F);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.socilmedia-container {
+    margin-bottom: 30px
+}
+
+.or-container {
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    height: 60px;
+    border-radius: 8px;
+    background: var(--primary-color, #6358DC);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.login-btn:hover {
+    opacity: .9;
+}
+
+.register-btn {
+    color: #6358DC;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    opacity: .7;
+}
+
+.have-account {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 8px
+}
+
+.register-container{
+    display: flex;
+    justify-content: center;
+}
+
+.my-custom-theme {
+    background-color: #6358DC !important;
+    color: #6358DC !important;
+}
